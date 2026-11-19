@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashu Shukla | Official Website</title>
+<meta name="description" content="Official personal website of Ashu Shukla.">
+<meta name="author" content="Ashu Shukla">
+<meta name="robots" content="index, follow">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d1b;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101a30;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px 8%;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text h1 {
+    font-size: clamp(45px, 7vw, 75px);
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color: #00d4ff;
+}
+
+.hero-text p {
+    color: #b8c5d9;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.photo {
+    width: 330px;
+    border: 4px solid #00d4ff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 35px #00d4ff55;
+}
+
+.photo img {
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 25px;
+    background: #00d4ff;
+    color: #080d1b;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+h2 {
+    font-size: 35px;
+    color: #00d4ff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about {
+    background: #101a30;
+    text-align: center;
+}
+
+.about p {
+    color: #c5d0e0;
+    font-size: 18px;
+    line-height: 1.9;
+    max-width: 750px;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #101a30;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #243c58;
+}
+
+.card h3 {
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #b8c5d9;
+    line-height: 1.7;
+}
+
+.contact {
+    text-align: center;
+    background: #101a30;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #aab5cc;
+}
+
+@media(max-width:700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero {
+        text-align: center;
+        gap: 35px;
+    }
+
+    .photo {
+        width: 270px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">ASHU SHUKLA</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+
+    <div class="hero-text">
+        <h1>ASHU <span>SHUKLA</span></h1>
+
+        <p>
+            Welcome to my official personal website.
+            I am Ashu Shukla. I enjoy learning new things,
+            exploring technology and creating new ideas.
+        </p>
+
+        <a href="#about" class="btn">Know More</a>
+    </div>
+
+    <div class="photo">
+        <img src="ashu-shukla.jpg" alt="Ashu Shukla">
+    </div>
+
+</header>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+
+    <p>
+        Hello! My name is Ashu Shukla.
+        I believe in learning, improving myself
+        and exploring new opportunities.
+        I am interested in technology,
+        creativity and personal development.
+        This is my official website where
+        you can know more about me.
+    </p>
+</section>
+
+<section id="interests">
+    <h2>My Interests</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Technology</h3>
+            <p>Exploring modern technology and digital innovation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Learning</h3>
+            <p>Learning new skills and gaining knowledge.</p>
+        </div>
+
+        <div class="card">
+            <h3>Creativity</h3>
+            <p>Creating new ideas and interesting projects.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Thank you for visiting my official website.</p>
+</section>
+
+<footer>
+    © 2026 Ashu Shukla | All Rights Reserved
+</footer>
+
+</body>
+</html>
